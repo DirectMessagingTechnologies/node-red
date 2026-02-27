@@ -1,11 +1,18 @@
 {
     "name": "node-red-heroku",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "dependencies": {
         "feedparser": "~2.2.10",
         "nano": "~10.x",
         "node-red": "~3.0.2",
         "pg": "^8.3.0",
-        "when": "~3.x"
+        "when": "~3.x",
+        "jsonschema":"~1.4.1",
+        "ulid": "~3.0.2",
+        "mysql2": "~3.18.2"
+    },
+    "engines":{
+        "node": "~20.11.1",
+        "npm": "~10.2.4"
     }
 }
