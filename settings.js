@@ -26,6 +26,10 @@ var settings = module.exports = {
     serialReconnectTime: 15000,
     debugMaxLength: 10000000,
 
+    // SKW-703/BUG-nr-rw-502-flows-save-attempt
+    // proposed initial fix
+    apiMaxLength: '20mb',
+
     // Blacklist the non-bluemix friendly nodes
     nodesExcludes:[ '66-mongodb.js','75-exec.js','35-arduino.js','36-rpi-gpio.js','25-serial.js','28-tail.js','50-file.js','31-tcpin.js','32-udp.js','23-watch.js' ],
 
