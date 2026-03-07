@@ -12,6 +12,6 @@
         "mysql2": "~3.18.2",
         "googleapis": "^126.0.1",
         "jsforce": "^3.0.0",
-        "keyword_extractor": "^0.0.26"
+        "keyword-extractor": "^0.0.26"
     }
 }
