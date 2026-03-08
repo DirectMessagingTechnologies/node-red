@@ -2162,7 +2162,7 @@ node-red-admin@^3.0.0:
   optionalDependencies:
     bcrypt "5.0.1"
 
-node-red-node-email@^4.2.1:
+node-red-node-email@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/node-red-node-email/-/node-red-node-email-4.0.0.tgz#5c4395add36071f96d615178eb7eb2689e545d99"
   integrity sha512-aPaIYQTNgOdmsH9Sdy23yYRig9ai67Q0FCcZ4J6jvwlzIe8zdBBBEm0JPjzKOIsMpmUAN17FeH/1KSGJ9VLIqA==
