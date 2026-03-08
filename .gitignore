@@ -7,5 +7,6 @@
 .forever
 .node-gyp
 node_modules
+data/node_modules
 .npm
 .profile

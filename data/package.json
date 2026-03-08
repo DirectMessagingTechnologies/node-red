@@ -1,0 +1,15 @@
+{
+  "name": "node-red-userdir",
+  "version": "1.0.0",
+  "description": "Node-RED userDir package manifest — pre-installed at build time",
+  "dependencies": {
+    "googleapis": "^126.0.1",
+    "jsforce": "^3.0.0",
+    "pg": "^8.3.0",
+    "mysql2": "~3.18.2",
+    "ulid": "~3.0.2",
+    "keyword-extractor": "^0.0.26",
+    "jsonschema": "~1.4.1",
+    "node-red-node-email": "^4.0.0"
+  }
+}

@@ -27,7 +27,7 @@ var settings = module.exports = {
     debugMaxLength: 10000000,
 
     //SKW-703/BUG-NR-RW-deploy-timeout; 4th or 5th attempt:
-    userDir: '/data',
+    userDir: path.join(__dirname, 'data'),
 
     // SKW-703/BUG-nr-rw-502-flows-save-attempt
     // proposed initial fix
