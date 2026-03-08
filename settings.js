@@ -50,8 +50,8 @@ var settings = module.exports = {
 
     // External module handling (modern replacement for autoInstallModules)
     externalModules: {
-        autoInstall: true,           // Allow Node-RED to auto-install missing modules at runtime
-        modulesDir: '/data/node_modules', // Where to install external modules
+        autoInstall: false,           // Allow Node-RED to auto-install missing modules at runtime
+        // modulesDir: '/data/node_modules', // Where to install external modules
         // allowList: [ // Removing this for now to explicitly not have to white-list npm modules
         //     'node-red-node-email',
         //     'jsforce',
