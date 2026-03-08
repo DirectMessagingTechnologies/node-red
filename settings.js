@@ -26,6 +26,9 @@ var settings = module.exports = {
     serialReconnectTime: 15000,
     debugMaxLength: 10000000,
 
+    //SKW-703/BUG-NR-RW-deploy-timeout; 4th or 5th attempt:
+    userDir: '/data',
+
     // SKW-703/BUG-nr-rw-502-flows-save-attempt
     // proposed initial fix
     apiMaxLength: '20mb',
@@ -39,7 +42,9 @@ var settings = module.exports = {
 
     // Enable module reinstalls on start-up; this ensures modules installed
     // post-deploy are restored after a restage
-    autoInstallModules: true,
+    autoInstallModules: false, 
+    // SKW-703 - changing true to false, this is also flagged as deprecated by NR/RW deploy logs
+
 
     // Move the admin UI
     httpAdminRoot: '/red',
