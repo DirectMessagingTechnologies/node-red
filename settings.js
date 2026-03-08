@@ -35,15 +35,48 @@ var settings = module.exports = {
 
     // SKW-703/BUG-nr-rw-502-flows-save-attempt
     // proposed followup fix
-    functionExternalModules: true,
+    // functionExternalModules: true, - removed this for SKW-703 as externalModules below handles this
 
     // Blacklist the non-bluemix friendly nodes
     nodesExcludes:[ '66-mongodb.js','75-exec.js','35-arduino.js','36-rpi-gpio.js','25-serial.js','28-tail.js','50-file.js','31-tcpin.js','32-udp.js','23-watch.js' ],
 
     // Enable module reinstalls on start-up; this ensures modules installed
     // post-deploy are restored after a restage
-    autoInstallModules: true, 
+    // autoInstallModules: true, 
     // SKW-703 - changing true to false, this is also flagged as deprecated by NR/RW deploy logs
+    // SKW-703 - commented this out, using the externalModules kvp
+
+    // SKW-703 externalModules definition below
+
+    // External module handling (modern replacement for autoInstallModules)
+    externalModules: {
+        autoInstall: true,           // Allow Node-RED to auto-install missing modules at runtime
+        modulesDir: '/data/node_modules', // Where to install external modules
+        // allowList: [ // Removing this for now to explicitly not have to white-list npm modules
+        //     'node-red-node-email',
+        //     'jsforce',
+        //     'keyword-extractor'
+        //     // Add any other modules your function nodes require
+        // ],
+        palette: {
+            allowInstall: true,      // Allow installing nodes via the editor's "Manage palette"
+            allowUpdate: true,
+            allowUpload: false       // If you want to prevent uploading zips of nodes via UI
+        }
+    },
+
+    functionGlobalContext: {
+        // If you want your function nodes to reference common libraries via global context
+        // jsforce:require('jsforce') -- this was a chatgpt example, we'll keep this empty for now
+        // add others as needed
+    },
+
+    // Optional: log verbosity for debugging module issues
+    logging: {
+        console: {
+            level: 'info', // can be 'debug' if you want more module install info
+        }
+    },
 
 
     // Move the admin UI
