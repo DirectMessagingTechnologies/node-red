@@ -13,6 +13,6 @@
         "googleapis": "^126.0.1",
         "jsforce": "^3.0.0",
         "keyword-extractor": "^0.0.26",
-        "node-red-node-email":"^4.2.1"
+        "node-red-node-email":"^4.0.0"
     }
 }
