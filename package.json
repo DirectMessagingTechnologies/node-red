@@ -1,8 +1,7 @@
 {
     "name": "node-red-heroku",
     "version": "0.0.3",
-    "scripts": {
-        "postinstall": "cd data && npm install --omit=dev"
+    "scripts": {        
     },
     "dependencies": {
         "feedparser": "~2.2.10",
