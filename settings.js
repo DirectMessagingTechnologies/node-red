@@ -74,7 +74,9 @@ var settings = module.exports = {
     // Optional: log verbosity for debugging module issues
     logging: {
         console: {
-            level: 'info', // can be 'debug' if you want more module install info
+            level: 'trace', // can be 'debug' if you want more module install info
+            metrics: false,
+            audit: false
         }
     },
 

@@ -7,7 +7,7 @@
     "dependencies": {
         "feedparser": "~2.2.10",
         "nano": "~10.x",
-        "node-red": "~3.0.2",
+        "node-red": "^3.1.15",
         "pg": "^8.3.0",
         "when": "~3.x",
         "jsonschema":"~1.4.1",
