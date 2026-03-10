@@ -74,9 +74,9 @@ var settings = module.exports = {
     // Optional: log verbosity for debugging module issues
     logging: {
         console: {
-            level: 'trace', // can be 'debug' if you want more module install info
-            metrics: false,
-            audit: false
+            level: 'info', // can be 'debug' if you want more module install info
+            // metrics: false, // used these kvps when kvp level: 'trace'
+            // audit: false
         }
     },
 
