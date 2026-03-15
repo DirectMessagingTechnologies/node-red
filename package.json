@@ -4,6 +4,7 @@
     "scripts": {        
     },
     "dependencies": {
+        "express": "~4.18.2",
         "feedparser": "~2.2.10",
         "nano": "~10.x",
         "node-red": "^4.1.7",

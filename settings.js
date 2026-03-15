@@ -65,11 +65,7 @@ var settings = module.exports = {
         }
     },
 
-    functionGlobalContext: {
-        // If you want your function nodes to reference common libraries via global context
-        // jsforce:require('jsforce') -- this was a chatgpt example, we'll keep this empty for now
-        // add others as needed
-    },
+    functionGlobalContext: { },
 
     // Optional: log verbosity for debugging module issues
     logging: {
@@ -90,8 +86,6 @@ var settings = module.exports = {
 
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
-
-    functionGlobalContext: { },
 
     storageModule: require("./pgstorage"),
 
